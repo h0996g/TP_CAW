@@ -42,8 +42,8 @@ function mouseEnter() {
 
 function endGame() {
     if(lose) {
-        if(msg=="cheting"){
-            msg="cheting";
+        if(msg=="cheating"){
+            msg="cheating";
             x[0].innerHTML=msg;
         }else{
 
@@ -54,8 +54,8 @@ function endGame() {
            
     } else 
     if(!lose && inside){
-        if(msg=="cheting"){
-            msg="cheting";
+        if(msg=="cheating"){
+            msg="cheating";
             x[0].innerHTML=msg;
         }else{
 
@@ -63,10 +63,10 @@ function endGame() {
             x[0].innerHTML=msg;
         }
     }else if(!lose && !inside){
-        msg="cheting"
+        msg="cheating"
         x[0].innerHTML=msg;
-    }else if(msg=="cheting"&& !inside){
-                msg="cheting";
+    }else if(msg=="cheating"&& !inside){
+                msg="cheating";
                 x[0].innerHTML=msg;
     }
     
