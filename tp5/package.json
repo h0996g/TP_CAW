@@ -1,0 +1,14 @@
+{
+  "name": "houss",
+  "version": "1.0.0",
+  "description": "tp5",
+  "main": "element.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.2.2"
+  }
+}
