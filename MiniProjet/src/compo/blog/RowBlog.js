@@ -1,22 +1,23 @@
 import React from 'react'
 
-export const Task = (props) => {
+export const RowBlog = (props) => {
 
     return (
         <div>
             <span className='name' >
-                {props.task.name}
+                {props.task.Subject}
             </span>
             <span className='phone' >
-                {props.task.phone}
+                {props.task.Description}
             </span>
             <span className='email'>
-                {props.task.email}
+                {props.task.Date}
             </span>
             {/* <button onClick={
                 props.onDelete}>x</button> */}
 
 
         </div>
+        // <>ggg</>
     )
 }

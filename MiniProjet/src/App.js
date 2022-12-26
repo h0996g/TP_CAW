@@ -1,7 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Blog } from './compo/Blog';
-import ContactPage from './compo/ContactPage';
+
+import { BlogPage } from './compo/blog/BlogPage';
+import ContactPage from './compo/contact/ContactPage';
 import { Home } from './compo/Home';
 
 
@@ -18,7 +19,7 @@ function App() {
     <Routes>
       <Route path="/" exact element={<Home />} />
       <Route path="/contact" exact element={<ContactPage />} />
-      <Route path="/blog" exact element={<Blog />} />
+      <Route path="/blog" exact element={<BlogPage />} />
 
     </Routes>
 

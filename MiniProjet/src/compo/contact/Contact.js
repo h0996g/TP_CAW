@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from "react"
-import NewTaskForm from "./NewTaskForm"
-import TaskList from "./TaskList"
+import NewContactForm from "./NewContactForm"
+import ContactList from "./ContactList"
 
 const getlocalItems = () => {
     let list = localStorage.getItem('sharedpreferences');
@@ -22,10 +22,10 @@ function Contact({ prop }) {
 
 
     if (prop.condition === true) {
-        return (<TaskList tList={tList} />)
+        return (<ContactList tList={tList} />)
     }
     if (prop.condition === false) {
-        return (<NewTaskForm setTList={setTList} tList={tList} />)
+        return (<NewContactForm setTList={setTList} tList={tList} />)
     }
 
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-function NewTaskForm({setTList, tList}) {
+function NewContactForm({ setTList, tList }) {
     let nameValue = document.querySelector('.name')
     let phoneValue = document.querySelector('.phone')
     let emailValue = document.querySelector('.email')
@@ -32,7 +32,7 @@ function NewTaskForm({setTList, tList}) {
             v.preventDefault();
         }
 
-        setTList([...tList, {name: name, phone:phone, email:email}])
+        setTList([...tList, { name: name, phone: phone, email: email }])
     }
 
     return (
@@ -52,4 +52,4 @@ function NewTaskForm({setTList, tList}) {
 
 
 
-export default NewTaskForm;
+export default NewContactForm;

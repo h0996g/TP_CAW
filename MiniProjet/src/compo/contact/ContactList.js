@@ -1,7 +1,7 @@
 import { React } from "react";
-import { Task } from "./Task";
+import { RowContact } from "./RowContact";
 
-function TaskList({ tList }) {
+function ContactList({ tList }) {
   console.log("TaskList")
   console.log(tList)
 
@@ -15,7 +15,7 @@ function TaskList({ tList }) {
 
       {tList ? (
         tList.map((task, i) => (
-          <Task
+          <RowContact
             key={i}
             task={task}
           />
@@ -27,4 +27,4 @@ function TaskList({ tList }) {
     </div>
   );
 }
-export default TaskList;
+export default ContactList;
