@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, Route, Routes, useNavigate } from 'react-router-dom'
-import { Blog } from './Blog'
-import TaskList from './TaskList'
+
 
 
 export const Home = (props) => {
@@ -25,11 +24,11 @@ export const Home = (props) => {
                 </div> */}
 
             </div>
-            <Routes>
+            {/* <Routes>
 
                 <Route path="/contact" exact element={<TaskList />} />
                 <Route path="/blog" exact element={<Blog />} />
-            </Routes>
+            </Routes> */}
 
         </div>
     )

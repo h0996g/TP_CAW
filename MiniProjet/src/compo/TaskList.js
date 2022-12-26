@@ -1,7 +1,7 @@
-import { React, useState, useEffect } from "react";
+import { React } from "react";
 import { Task } from "./Task";
 
-function TaskList({tList}) {
+function TaskList({ tList }) {
   console.log("TaskList")
   console.log(tList)
 
@@ -13,7 +13,7 @@ function TaskList({tList}) {
         <span className="email title">Email</span>
       </div>
 
-      {tList? (
+      {tList ? (
         tList.map((task, i) => (
           <Task
             key={i}
@@ -23,7 +23,7 @@ function TaskList({tList}) {
       ) : (
         <></>
       )}
-      
+
     </div>
   );
 }

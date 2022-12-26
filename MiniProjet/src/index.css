@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,48 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+*{
+  box-sizing: border-box;
 }
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+.container{
+  width:  60%;
+  margin: 5% auto;
+}
+.ListItems{
+  background: #fff;
+  color: #46529d;
+  padding: 30px 15%;
+  margin: 5% auto;
+
+  text-align: center;
+}
+.ListItems span {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  border: 0.3px solid #ccc;
+}
+.ListItems span.title {
+  background: #2ebaee;
+}
+.ListItems span.name {
+width:33% ;
+}
+.ListItems span.phone {
+  width:33% ;
+
+}
+.ListItems span.email {
+  width:33% ;
+
+}
+
