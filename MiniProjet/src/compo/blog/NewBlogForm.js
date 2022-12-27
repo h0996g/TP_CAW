@@ -9,6 +9,8 @@ function NewBlogForm({ setBlogList, BlogL }) {
     const [Subject, setSubject] = useState("")
     const [Description, setDescription] = useState("")
     const [Date, setDate] = useState("")
+    const [Id, setId] = useState(1);
+    const [Like, setLike] = useState(0);
 
     const handleChangeName = (e) => {
         setSubject(
@@ -32,7 +34,8 @@ function NewBlogForm({ setBlogList, BlogL }) {
             v.preventDefault();
         }
 
-        setBlogList([...BlogL, { Subject: Subject, Description: Description, Date: Date }])
+        setBlogList([...BlogL, { id: Id, Subject: Subject, Description: Description, Date: Date, like: Like }])
+        setId(Id + 1);
     }
 
     return (

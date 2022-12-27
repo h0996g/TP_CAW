@@ -13,6 +13,9 @@ export const RowBlog = (props) => {
             <span className='email'>
                 {props.task.Date}
             </span>
+            <button onClick={props.like} className='like'> Like :
+                {props.task.like}
+            </button>
             {/* <button onClick={
                 props.onDelete}>x</button> */}
 

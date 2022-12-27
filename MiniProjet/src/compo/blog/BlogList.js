@@ -2,9 +2,21 @@ import { React } from "react";
 import { BlogT, RowBlog } from "./RowBlog";
 
 
-function BlogList({ BlogL }) {
-    console.log("TaskList")
+function BlogList({ BlogL, setBlogList }) {
+
     console.log(BlogL)
+    const AddLike = (id) => {
+        setBlogList(BlogL.map((BlogL) => {
+            if (BlogL.id === id) {
+                return {
+                    ...BlogL,
+                    like: BlogL.like + 1
+                }
+            } else {
+                return BlogL;
+            }
+        }))
+    }
 
     return (
         <div className="ListItems">
@@ -12,13 +24,15 @@ function BlogList({ BlogL }) {
                 <span className="name title">Subject</span>
                 <span className="phone title">Description</span>
                 <span className="email title">Date</span>
+                <span className="like title"></span>
             </div>
 
             {BlogL ? (
-                BlogL.map((task, i) => (
+                BlogL.map((task) => (
                     <RowBlog
-                        key={i}
+                        key={task.id}
                         task={task}
+                        like={() => AddLike(task.id)}
                     />
                 ))
             ) : (

@@ -31,7 +31,7 @@ function Blog({ prop }) {
 
 
     if (prop.condition === true) {
-        return (<BlogList BlogL={BlogL} />)
+        return (<BlogList BlogL={BlogL} setBlogList={setBlogList} />)
     }
     if (prop.condition === false) {
         return (<NewTaskBlog setBlogList={setBlogList} BlogL={BlogL} />)

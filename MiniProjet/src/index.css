@@ -44,14 +44,20 @@ body{
   background: #2ebaee;
 }
 .ListItems span.name {
-width:33% ;
+width:25% ;
 }
 .ListItems span.phone {
-  width:33% ;
+  width:25% ;
 
 }
 .ListItems span.email {
-  width:33% ;
+  width:40% ;
+
+}
+.ListItems .like {
+  /* color: transparent; */
+  /* background-color: transparent; */
+  width:10% ;
 
 }
 
