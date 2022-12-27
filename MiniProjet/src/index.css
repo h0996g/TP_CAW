@@ -28,7 +28,7 @@ body{
 .ListItems{
   background: #fff;
   color: #46529d;
-  padding: 30px 15%;
+  padding: 10px 5%;
   margin: 5% auto;
 
   text-align: center;
@@ -51,10 +51,16 @@ width:25% ;
 
 }
 .ListItems span.email {
-  width:40% ;
+  width:25% ;
 
 }
 .ListItems .like {
+  /* color: transparent; */
+  /* background-color: transparent; */
+  width:10% ;
+
+}
+.ListItems .dislike {
   /* color: transparent; */
   /* background-color: transparent; */
   width:10% ;

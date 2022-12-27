@@ -17,6 +17,18 @@ function BlogList({ BlogL, setBlogList }) {
             }
         }))
     }
+    const AddDislike = (id) => {
+        setBlogList(BlogL.map((BlogL) => {
+            if (BlogL.id === id) {
+                return {
+                    ...BlogL,
+                    dislike: BlogL.dislike + 1
+                }
+            } else {
+                return BlogL;
+            }
+        }))
+    }
 
     return (
         <div className="ListItems">
@@ -33,6 +45,7 @@ function BlogList({ BlogL, setBlogList }) {
                         key={task.id}
                         task={task}
                         like={() => AddLike(task.id)}
+                        dislike={() => AddDislike(task.id)}
                     />
                 ))
             ) : (
