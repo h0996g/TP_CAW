@@ -16,7 +16,15 @@ const getlocalBlocsItems = () => {
 function Blog({ prop }) {
     getlocalBlocsItems()
     const [BlogL, setBlogList] = useState(getlocalBlocsItems())
+    console.log("filter");
+
+    // pour sort it by Date
+    BlogL.sort((a, b) =>
+        a.Date.split('/').reverse().join().localeCompare(b.Date.split('/').reverse().join()));
+    console.log(BlogL);
+
     useEffect(() => {
+        // save in localStorage (sort it by Date) 
         localStorage.setItem('BlogStorage', JSON.stringify(BlogL))
 
     }, [BlogL]);
