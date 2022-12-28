@@ -40,16 +40,18 @@ function NewBlogForm({ setBlogList, BlogL }) {
     }
 
     return (
+        
         <form onSubmit={handleSubmit}>
              <span className="spanform">Subject </span> <div></div>  <input className="Subject" type="text" onChange={handleChangeName} value={Subject} placeholder=" Subject"/>
             <div></div>
             <span className="spanform">Description </span><div></div>  <input className="Description" type="text" onChange={handleChangePhone} value={Description} placeholder=" Description"/>
             <div></div>
 
-            <span className="spanform">Date </span> <div></div> <input className="Date" type="date" onChange={handleChangeEmail} value={Date} placeholder=" Date" />
+            <span className="spanform">Date </span> <div></div> <input className="Date" type="date" onChange={handleChangeEmail} value={Date} placeholder=" Date"  />
             <div></div>
             <button onClick={handleSubmit} >Add Task</button>
         </form>
+        
     );
 }
 

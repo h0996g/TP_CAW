@@ -17,9 +17,11 @@ export const BlogPage = () => {
                 <button onClick={(e) => { e.preventDefault(); setCondition(false) }}>
                     Create Blogs
                 </button>
-                {/* <Link to="/">Home</Link> */}
+             
                 <button onClick={() => navigate('/')}> <i class="fa fa-home"></i>   Home</button>
+                
                 <Blog prop={{ condition }} />
+                
             </div>
             <></>
         </div>)
