@@ -12,10 +12,22 @@ const getlocalBlocsItems = () => {
         return [];
     }
 }
+const getlocalIdItems = () => {
+    let list = localStorage.getItem('Id');
+    console.log(list);
+    if (list) {
+        return JSON.parse(localStorage.getItem('Id'))
+    } else {
+        return 1;
+    }
+}
 
 function Blog({ prop }) {
     getlocalBlocsItems()
+    getlocalIdItems()
     const [BlogL, setBlogList] = useState(getlocalBlocsItems())
+    const [Id, setId] = useState(getlocalIdItems());
+
     console.log("filter");
 
     // pour sort it by Date
@@ -28,13 +40,18 @@ function Blog({ prop }) {
         localStorage.setItem('BlogStorage', JSON.stringify(BlogL))
 
     }, [BlogL]);
+    useEffect(() => {
+        // save in localStorage (sort it by Date) 
+        localStorage.setItem('Id', JSON.stringify(Id))
+
+    }, [Id]);
 
 
     if (prop.condition === true) {
         return (<BlogList BlogL={BlogL} setBlogList={setBlogList} />)
     }
     if (prop.condition === false) {
-        return (<NewTaskBlog setBlogList={setBlogList} BlogL={BlogL} />)
+        return (<NewTaskBlog setBlogList={setBlogList} BlogL={BlogL} setId={setId} Id={Id} />)
     }
 
 

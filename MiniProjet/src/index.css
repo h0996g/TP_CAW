@@ -87,7 +87,7 @@ h1 {
 }
 
 /* les button  */
-button {
+.submit,button {
   width: 200px;
   background-color: #4CAF50; /* Green */
   /* border: none; */
@@ -100,18 +100,14 @@ button {
   margin: 8px 8px;
   transition-duration: 0.4s;
   cursor: pointer;
-}
-
-button {
-border-radius: 10px;
+  border-radius: 10px;
   background-color: #1aaf75;
   color: white;
   border: 2px solid #1aaf75;
- 
-  
 }
 
-button:hover {
+
+.submit:hover,button:hover {
   background-color: white; 
   color: #1aaf75; 
   border: 2px solid #1aaf75;
@@ -199,8 +195,11 @@ span{
   
   color: #fff;
   font: 26px Helvetica;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 1px;
+}
+span.title{
+  text-transform: uppercase;
 }
 /* form */
 /* bloc */
@@ -228,7 +227,23 @@ input[type=date] {
 
 }
 
-/* cadre */
+
+
+.message .success{
+  font-size: 20px;
+  color: white;
+  /* position: absolute; */
+  animation: buttons .3s linear;
+  display: none;
+}
+.message .danger{
+  font-size: 20px;
+  color: red;
+  /* position: absolute; */
+  transition: .3s;
+  animation: buttons .3s linear;
+  display: none;
+}
 
 
 
