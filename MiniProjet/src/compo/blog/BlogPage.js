@@ -1,22 +1,24 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 import Blog from "./Blog";
 
 
 export const BlogPage = () => {
     const [condition, setCondition] = useState(true);
+    const navigate = useNavigate()
 
     return (
-        <div className="ListItems">
+        <div className="ListItems" id="blog">
             <p>
-                <i>Blog</i> (after chlicking on the Display Blogs button)
+                <i>Blogs</i> 
             </p>
             <div>
                 <button onClick={(e) => { e.preventDefault(); setCondition(true) }}> Display Blogs</button>
                 <button onClick={(e) => { e.preventDefault(); setCondition(false) }}>
                     Create Blogs
                 </button>
-                <Link to="/">Home</Link>
+                {/* <Link to="/">Home</Link> */}
+                <button onClick={() => navigate('/')}> <i class="fa fa-home"></i>   Home</button>
                 <Blog prop={{ condition }} />
             </div>
             <></>

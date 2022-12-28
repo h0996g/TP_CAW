@@ -6,14 +6,14 @@ import { Link, Route, Routes, useNavigate } from 'react-router-dom'
 export const Home = (props) => {
     const navigate = useNavigate()
     return (
-        <div>
+        <div id='home'>
             <h1>
-                i am houssem eddine welcome to my page
+                We are houss-ala team welcome to our page
             </h1>
             <button onClick={() => navigate('/contact')}> Contact</button>
             <button onClick={() => navigate('/blog')}> Blog</button>
             <div>
-                <button onClick={() => navigate('/')}> Home</button>
+                {/* <button onClick={() => navigate('/')}> Home</button> */}
 
             </div>
             <div>

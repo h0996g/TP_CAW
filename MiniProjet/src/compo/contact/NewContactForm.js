@@ -37,12 +37,12 @@ function NewContactForm({ setTList, tList }) {
 
     return (
         <form onSubmit={handleSubmit}>
-            name  <input className="name" type="text" onChange={handleChangeName} value={name} />
+            <span className="spanform">Name </span> <div></div> <input className="name" type="text" onChange={handleChangeName} value={name} placeholder=" name" />
             <div></div>
-            phone <input className="phone" type="text" onChange={handleChangePhone} value={phone} />
+             <span className="spanform">Phone</span> <div></div> <input className="phone" type="text" onChange={handleChangePhone} value={phone} placeholder=" phone" /> 
             <div></div>
 
-            email <input className="email" type="text" onChange={handleChangeEmail} value={email} />
+             <span className="spanform">Email </span> <div></div> <input className="email" type="text" onChange={handleChangeEmail} value={email} placeholder=" email" /> 
             <div></div>
             <button onClick={handleSubmit} >Add Task</button>
         </form>

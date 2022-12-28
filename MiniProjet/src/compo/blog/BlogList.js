@@ -31,12 +31,12 @@ function BlogList({ BlogL, setBlogList }) {
     }
 
     return (
-        <div className="ListItems">
+        <div className="ListItemss">
             <div>
                 <span className="name title">Subject</span>
                 <span className="phone title">Description</span>
                 <span className="email title">Date</span>
-                <span className="like title"></span>
+                <span className="like title">Likes</span>
             </div>
 
             {BlogL ? (

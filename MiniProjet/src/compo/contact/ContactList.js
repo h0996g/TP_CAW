@@ -6,7 +6,7 @@ function ContactList({ tList }) {
   console.log(tList)
 
   return (
-    <div className="ListItems">
+    <div className="ListItemss">
       <div>
         <span className="name title">Name</span>
         <span className="phone title">Phone</span>

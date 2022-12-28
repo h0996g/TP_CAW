@@ -16,9 +16,9 @@ export const RowBlog = (props) => {
             <button onClick={props.like} className='like'> Like :
                 {props.task.like}
             </button>
-            <button onClick={props.dislike} className='dislike'> Dislike :
+            {/* <button onClick={props.dislike} className='dislike'> Dislike :
                 {props.task.dislike}
-            </button>
+            </button> */}
             {/* <button onClick={
                 props.onDelete}>x</button> */}
 
