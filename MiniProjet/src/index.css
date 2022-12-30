@@ -178,17 +178,25 @@ margin-top: 20px;
 }
 .ListItemss span.name {
 width:20% ;
+text-overflow: ellipsis;
+  overflow: hidden;
 }
 .ListItemss span.phone {
   width:20% ;
+  text-overflow: ellipsis;
+  overflow: hidden;
 
 }
 .ListItemss span.email {
   width:20% ;
+  text-overflow: ellipsis;
+  overflow: hidden;
 
 }
 .ListItemss span.like {
   width:20% ;
+  text-overflow: ellipsis;
+  overflow: hidden;
 
 }
 span{
